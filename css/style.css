@@ -1,0 +1,259 @@
+:root {
+    --basic-white:#ffffff;
+    --basic-black:#000000;
+    --basic-light-blue: #81B3D2;
+    --basic-blue: #669EC0;
+    --basic-dark-blue:#5496BD;
+    --basic-neutral: #EEEEEE;
+    --basic-brown: #766357;
+    --basic-darker-brown: #604E43;
+    --basic-darkest-brown: #503E33;
+    --basic-grey: #666666;
+    --basic-light-grey: #BDBBBC;
+    --basic-grey95: #F2F2F2;
+    --basic-grey92: #EBEBEB;
+    --badic-grey90: #E5E5E5;
+    --basic-dark-grey: #A9A9A9;    
+}
+
+.page-body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("../img/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation {
+    font-weight: 700;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+    color: var(--basic-light-blue);
+}
+
+.site-navigation a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.site-navigation a:active {
+    color: var(--basic-brown);
+}
+
+.main-heading {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.five-reasons {
+    font-size: 14px;
+    line-height: 26px;    
+    font-weight: 400;
+    text-align: center;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    line-height: 21px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+
+.feature-item-1,
+.feature-item-2 {
+    background-color: var(--basic-light-blue);
+    color: var(--basic-white);
+}
+
+.feature-item-3,
+.feature-item-4,
+.feature-item-5 {
+    background-color: var(--basic-neutral);
+}
+
+.interested {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.trip-date {
+    line-height: 24px;
+    text-align: center;
+}
+
+.hotel-searh {
+    background-color: var(--basic-brown);
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--basic-white);
+    text-align: center;
+}
+
+.hotel-searh:hover {
+    background-color: var(--basic-darker-brown);
+}
+
+.hotel-searh:focus {
+    background-color: var(--basic-darkest-brown);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+    background-color: var(--basic-white);
+    opacity: 0.9;
+}
+
+.footer-contacts {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-phone {
+    color: var(--basic-black);
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: inherit;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.social-button {
+    color: inherit;
+    background-color: var(--basic-light-blue);
+}
+
+.social-button:hover {
+    background-color: var(--basic-blue);
+}
+
+.social-button:focus {
+    background-color: var(--basic-dark-blue);    
+}
+
+.copyright-button {
+    background-color: var(--basic-black);
+}
+
+.social-button:hover {
+    background-color: var(--basic-light-blue);
+}
+
+.social-button:focus {
+    background-color: var(--basic-light-grey);    
+}
+
+.modal {
+    font-weight: 700;
+}
+
+.people-number {
+    font: inherit;
+    background-color: var(--basic-grey95);
+    border: none;
+}
+
+.icon-date {
+    font: inherit;
+    background-color: var(--basic-grey95);
+    border: none;
+}
+
+.icon-date:hover {
+    background-color: var(--basic-grey92);
+    border: none;
+}
+
+.icon-date:focus {
+    background-color: var(--basic-white);
+    border: 2px solid var(--badic-grey90);
+}
+
+input.icon-date::placeholder {
+    color: var(--basic-black);
+}
+
+input.people-number::placeholder {
+    color: var(--basic-black);
+}
+
+.people-number-change {
+    background-color: var(--basic-grey95);
+    border: none;
+    color: var(--basic-dark-grey);
+}
+
+.people-number-change:hover {
+    color: var(--basic-black);
+}
+
+.people-number-change:focus {
+    color: var(--basic-light-blue);
+}
+
+.search-button {
+    font-size: 21px;
+    font-weight: 26px;
+    font-weight: 700;
+    color: var(--basic-white);
+    background-color: var(--basic-light-blue);
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-button:hover {
+    background-color: var(--basic-blue);
+}
+
+.hotel-searh:focus {
+    background-color: var(--basic-dark-blue);
+    color: rgba (255, 255, 255, 0.3);
+}
