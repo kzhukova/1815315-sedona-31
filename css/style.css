@@ -1,5 +1,5 @@
 :root {
-    --basic-white:#ffffff;
+    --basic-white:#FFFFFF;
     --basic-black:#000000;
     --basic-light-blue: #81B3D2;
     --basic-blue: #669EC0;
@@ -97,15 +97,15 @@ img {
     font-weight: 700;
   }
 
-.feature-item-1,
-.feature-item-2 {
+.feature-item-real,
+.feature-item-bridge {
     background-color: var(--basic-light-blue);
     color: var(--basic-white);
 }
 
-.feature-item-3,
-.feature-item-4,
-.feature-item-5 {
+.feature-item-close,
+.feature-item-road,
+.feature-item-uncrowded {
     background-color: var(--basic-neutral);
 }
 
@@ -197,18 +197,18 @@ img {
 .people-number {
     font: inherit;
     background-color: var(--basic-grey95);
-    border: none;
+    border: 0;
 }
 
 .icon-date {
     font: inherit;
     background-color: var(--basic-grey95);
-    border: none;
+    border: 0;
 }
 
 .icon-date:hover {
     background-color: var(--basic-grey92);
-    border: none;
+    border: 0;
 }
 
 .icon-date:focus {
@@ -226,7 +226,7 @@ input.people-number::placeholder {
 
 .people-number-change {
     background-color: var(--basic-grey95);
-    border: none;
+    border: 0;
     color: var(--basic-dark-grey);
 }
 
@@ -244,7 +244,7 @@ input.people-number::placeholder {
     font-weight: 700;
     color: var(--basic-white);
     background-color: var(--basic-light-blue);
-    border: none;
+    border: 0;
     text-transform: uppercase;
     text-align: center;
 }
