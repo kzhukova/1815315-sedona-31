@@ -1,7 +1,6 @@
 :root {
     --basic-white:#FFFFFF;
     --basic-black:#000000;
-    --basic-light-blue: #81B3D2;
     --basic-blue: #669EC0;
     --basic-dark-blue:#5496BD;
     --basic-neutral: #EEEEEE;
@@ -17,6 +16,7 @@
     --basic-grey20: #333333;
     --basic-dark-grey: #A9A9A9;
 
+    --brand-color: #81B3D2;
 }
 
 .page-body {
@@ -56,7 +56,7 @@ img {
 }
 
 .site-navigation a:hover {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
 }
 
 .site-navigation a:focus {
@@ -105,7 +105,7 @@ img {
 
 .feature-item-real,
 .feature-item-bridge {
-    background-color: var(--basic-light-blue);
+    background-color: var(--brand-color);
     color: var(--basic-white);
 }
 
@@ -173,7 +173,7 @@ img {
 
 .social-button {
     color: inherit;
-    background-color: var(--basic-light-blue);
+    background-color: var(--brand-color);
 }
 
 .social-button:hover {
@@ -189,7 +189,7 @@ img {
 }
 
 .social-button:hover {
-    background-color: var(--basic-light-blue);
+    background-color: var(--brand-color);
 }
 
 .social-button:focus {
@@ -241,7 +241,7 @@ input.people-number::placeholder {
 }
 
 .people-number-change:focus {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
 }
 
 .search-button {
@@ -249,7 +249,7 @@ input.people-number::placeholder {
     font-weight: 26px;
     font-weight: 700;
     color: var(--basic-white);
-    background-color: var(--basic-light-blue);
+    background-color: var(--brand-color);
     border: 0;
     text-transform: uppercase;
     text-align: center;
@@ -333,12 +333,12 @@ input.people-number::placeholder {
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
     border: 0;
-    border-bottom: 1px dashed var(--basic-light-blue);
+    border-bottom: 1px dashed var(--brand-color);
     background-color: var(--basic-white);
 }
 
 .sorting-button:hover {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
 }
 
 .sorting-button:focus {
@@ -347,7 +347,7 @@ input.people-number::placeholder {
 }
 
 .filter-button:active {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
     border: 0;
 }
 
@@ -361,7 +361,7 @@ input.people-number::placeholder {
 
 .order-button:focus,
 .order-button:active {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
 }
 
 .catalog {
@@ -386,7 +386,7 @@ input.people-number::placeholder {
 }
 
 .catalog-item-name:hover {
-    color: var(--basic-light-blue);
+    color: var(--brand-color);
 }
 
 .catalog-item-name:focus {
@@ -401,7 +401,7 @@ input.people-number::placeholder {
 }
 
 .learn-more {
-    background-color: var(--basic-light-blue);
+    background-color: var(--brand-color);
 }
 
 .learn-more:hover {
