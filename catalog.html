@@ -10,7 +10,8 @@
     
   </head>
   <body class="page-body inner-page">
-
+  
+  <div class="main-container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html" title="Перейти на главную страницу">
@@ -26,10 +27,11 @@
 </header>
 
 <main class="page-catalog container">
-  <h1>Гостиницы</h1>
+  <h1 class="hidden">Гостиницы</h1>
   <section class="filters">
-    <h2>Фильтры для поиска жилья</h2>
+    <h2 class="hidden">Фильтры для поиска жилья</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <div class="infrastructure">
       <fieldset class="filter-fieldset">
         <legend class="filters-legend">Инфраструктура:</legend>
         <ul>
@@ -47,6 +49,8 @@
           </li>
         </ul>
       </fieldset>
+      </div>
+      <div class="accomodation-type">
       <fieldset class="filter-fieldset">
         <legend class="filters-legend">Тип жилья:</legend>
         <ul>
@@ -64,6 +68,8 @@
           </li>
         </ul>
       </fieldset>
+      </div>
+      <div class="price-for-night">
       <fieldset class="filter-fieldset">
         <legend class="filters-legend">Стоимость в сутки, ₽:</legend>
         <label>от<input class="filter-input-text filter-input" type="text" value="0"></label>
@@ -71,6 +77,7 @@
       </fieldset>
       <div><!-- слайдер диапазона цены --></div>
       <button class="filter-button" type="submit">Показать</button>
+      </div>
     </form>
   </section>
   
@@ -87,67 +94,90 @@
   </section>
   
   <section class="catalog">
-    <h2>Список гостиниц</h2>
+    <h2 class="hidden">Список гостиниц</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
-        <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa на фоне гор">
-        <a href="#" title="На страницу гостиницы Amara Resort & Spa"><h3 class="catalog-item-name">Amara Resort & Spa</h3></a>         
+        <div class="hotel-picture">
+          <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa на фоне гор">
+        </div>
+        <div class="hotel-card">
+          <a href="#" title="На страницу гостиницы Amara Resort & Spa"><h3 class="catalog-item-name">Amara Resort & Spa</h3></a>         
           <p>Гостиница</p>
           <p>От 4000 ₽</p>
           <a class="learn-more" href="#" title="Подробнее о гостинице Amara Resort & Spa">Подробнее</a>
           <a class="book-hotel" href="#" title="Забронировать гостиницу Amara Resort & Spa">Забронировать</a>
+        </div>
+        <div class="hotel-rate">
           <span>4 звезды</span>
           <p class="hotel-rating">Рейтинг: 8,5</p>
+        </div>
       </li>
       <li class="catalog-item">
-        <img src="img/desert.jpg" width="135" height="90" alt="Глаыный вход мотеля Desert Quail Inn">
-        <a href="#" title="На страницу мотеля Desert Quail Inn"><h3 class="catalog-item-name">Desert Quail Inn</h3></a>          
+        <div class="hotel-picture">
+          <img src="img/desert.jpg" width="135" height="90" alt="Глаыный вход мотеля Desert Quail Inn">
+        </div>
+        <div class="hotel-card">
+          <a href="#" title="На страницу мотеля Desert Quail Inn"><h3 class="catalog-item-name">Desert Quail Inn</h3></a>          
           <p>Мотель</p>
           <p>От 3000 ₽</p>
           <a class="learn-more" href="#" title="Подробнее о мотеле Desert Quail Inn">Подробнее</a>
           <a class="book-hotel" href="#" title="Забронировать мотель Desert Quail Inn">Забронировать</a>
+        </div>
+        <div class="hotel-rate">
           <span>3 звезды</span>
           <p class="hotel-rating">Рейтинг: 8,9</p>
+        </div>
       </li>
       <li class="catalog-item">
+        <div class="hotel-picture">
           <img src="img/villas.jpg" width="135" height="90" alt="Зеленая территория апартаментов Villas at Poco Diablo">
+        </div>
+        <div class="hotel-card">
           <a href="#" title="На страницу апартаментов Villas at Poco Diablo"><h3 class="catalog-item-name">Villas at Poco Diablo</h3></a>          
-            <p>Апартаменты</p>
-            <p>От 2000 ₽</p>
-            <a class="learn-more" href="#" title="Подробнее об апартаментах Villas at Poco Diablo">Подробнее</a>
-            <a class="book-hotel" href="#" title="Забронировать апартаменты Villas at Poco Diablo">Забронировать</a>
-            <span>2 звезды</span>
-            <p class="hotel-rating">Рейтинг: 9,2</p>
+          <p>Апартаменты</p>
+          <p>От 2000 ₽</p>
+          <a class="learn-more" href="#" title="Подробнее об апартаментах Villas at Poco Diablo">Подробнее</a>
+          <a class="book-hotel" href="#" title="Забронировать апартаменты Villas at Poco Diablo">Забронировать</a>
+        </div>
+        <div class="hotel-rate">
+          <span>2 звезды</span>
+          <p class="hotel-rating">Рейтинг: 9,2</p>
+        </div>
       </li>
     </ul>
   </section>
 </main>
 
-<footer class="main-footer">
-  <section class="footer-contacts">
-    <h2>Контакты</h2>
-    <span class="footer-hashtag ">#visitsedona</span>
-    <a class="footer-phone link" href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
-  </section>
-  <section class="footer-social">
-    <h2>Социальные сети</h2>
-    <ul>
-      <li class="twitter">
-        <a class="social-button link" href="#" title="Twitter">Twitter</a>
-      </li>
-      <li>
-        <a class="social-button link" href="#" title="Facebook">Facebook</a>
-      </li>
-      <li>
-        <a class="social-button link" href="#" title="Youtube">Youtube</a>
-      </li>
-    </ul>
-  </section>
-  <p class="footer-copyright">
-    Website by
-    <a class="copyright-button link" href="https://htmlacademy.ru" title="Разработано HTML ACADEMY">.html academy</a>
-  </p>
-</footer>         
+<footer class="main-footer inner-footer">
+  <div class="container">
+    <section class="footer-contacts">
+      <h2 class="hidden">Контакты</h2>
+      <span class="footer-hashtag ">#visitsedona</span>
+      <br>
+      <a class="footer-phone link" href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
+    </section>
+    <section class="footer-social">
+      <h2 class="hidden">Социальные сети</h2>
+      <ul>
+        <li class="twitter">
+          <a class="social-button link" href="#" title="Twitter">Twitter</a>
+        </li>
+        <li>
+          <a class="social-button link" href="#" title="Facebook">Facebook</a>
+        </li>
+        <li>
+          <a class="social-button link" href="#" title="Youtube">Youtube</a>
+        </li>
+      </ul>
+    </section>
+    <p class="footer-copyright">
+      Website by
+      <a class="copyright-button link" href="https://htmlacademy.ru" title="Разработано HTML ACADEMY">.html academy</a>
+    </p>
+  </div>
+</footer>
+</div> 
+</div>         
 
   </body>
 </html>
