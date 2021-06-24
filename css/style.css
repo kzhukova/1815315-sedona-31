@@ -466,7 +466,7 @@ input.people-number::placeholder {
 }
 
 .site-navigation-current a {
-    color: var(--basic-brown)
+    color: var(--basic-brown);
 }
 
 .page-catalog {
