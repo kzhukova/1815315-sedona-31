@@ -93,7 +93,6 @@ img {
 
 .site-navigation li:last-child {
     grid-column: -2 / -1;
-
 }
 
 .site-navigation a {
