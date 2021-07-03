@@ -158,8 +158,8 @@ img {
 
 .main-heading {
     min-height: 80px;
-    margin-top: 42.5px;
-    margin-bottom: 16.5px;
+    margin-top: 42px;
+    margin-bottom: 16px;
 }
 
 .sedona-description {
@@ -356,8 +356,8 @@ img {
 .feature-item-accomidation h3::before {
     content: "";
     position: absolute;
-    top: -102.7px;
-    left: 162.1px;
+    top: -103px;
+    left: 162px;
     width: 75px;
     height: 72px;
     background-image: url("../img/icon-1.svg");
@@ -379,7 +379,7 @@ img {
 .feature-item-food h3::before {
     content: "";
     position: absolute;
-    top: -102.7px;
+    top: -103px;
     left: 162px;
     width: 75px;
     height: 70px;
@@ -402,7 +402,7 @@ img {
 .feature-item-memory h3::before {
     content: "";
     position: absolute;
-    top: -102.7px;
+    top: -103px;
     left: 168px;
     width: 64px;
     height: 77px;
@@ -464,7 +464,7 @@ img {
 .main-footer {
     background-color: var(--basic-white);
     opacity: 0.9;
-    margin-top: -121.5px;
+    margin-top: -121px;
 }
 
 .inner-footer {
