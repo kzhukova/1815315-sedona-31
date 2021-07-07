@@ -695,6 +695,7 @@ img {
 .people-number:focus {
     background-color: var(--basic-white);
     border: 2px solid var(--badic-grey90);
+    outline: 0;
 }
 
 input.icon-date::placeholder {
@@ -732,7 +733,7 @@ input.people-number::placeholder {
     width: 458px;
     min-height: 58px;
     font-size: 21px;
-    font-weight: 26px;
+    line-height: 26px;
     font-weight: 700;
     color: var(--basic-white);
     background-color: var(--brand-color);
@@ -1206,7 +1207,7 @@ li:last-child .sorting-button {
 
 .learn-more:active {
     background-color: var(--basic-dark-blue);
-    color: rgba (255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .book-hotel {
