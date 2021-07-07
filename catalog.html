@@ -32,7 +32,7 @@
   <h1 class="visually-hidden">Гостиницы</h1>
   <section class="filters">
     <h2 class="visually-hidden">Фильтры для поиска жилья</h2>
-    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
       <div class="infrastructure">
       <fieldset class="filter-fieldset">
         <legend class="filters-legend">Инфраструктура:</legend>
@@ -73,7 +73,7 @@
       </div>
       <div class="price-for-night">
       <fieldset class="filter-fieldset">
-        <legend class="filters-legend">Стоимость в сутки, ₽:</legend>
+        <legend class="filters-legend">Стоимость в сутки, <span>&#8381;</span>:</legend>
           <div class="price-controls">
             <label class="min-price">
               от <input type="number" name="min-price" value="0">
@@ -116,13 +116,13 @@
     <div class="order-buttons">
     <button class="order-button order-up" type="button">
     <span class="visually-hidden">По возрастанию</span>
-    <svg width="11" height="10" viewBox="0 0 11 10">
+    <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10">
       <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
     </svg>
     </button>
     <button class="order-button order-down" type="button">
       <span class="visually-hidden">По убыванию</span>
-      <svg width="11" height="10" viewBox="0 0 11 10">
+      <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10">
         <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
       </svg>        
     </button>
@@ -137,9 +137,9 @@
           <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa на фоне гор">
         </div>
         <div class="hotel-card">
-          <a href="#" title="На страницу гостиницы Amara Resort & Spa"><h3 class="catalog-item-name">Amara Resort & Spa</h3></a>         
+          <h3 class="catalog-item-name"><a href="#" title="На страницу гостиницы Amara Resort & Spa">Amara Resort & Spa</a></h3>         
           <div>Гостиница</div>
-          <div>От 4000 ₽</div>
+          <div>От 4000 <span>&#8381;</span></div>
           <a class="learn-more" href="#" title="Подробнее о гостинице Amara Resort & Spa">Подробнее</a>
           <a class="book-hotel" href="#" title="Забронировать гостиницу Amara Resort & Spa">Забронировать</a>
         </div>
@@ -153,9 +153,9 @@
           <img src="img/desert.jpg" width="135" height="90" alt="Глаыный вход мотеля Desert Quail Inn">
         </div>
         <div class="hotel-card">
-          <a href="#" title="На страницу мотеля Desert Quail Inn"><h3 class="catalog-item-name">Desert Quail Inn</h3></a>          
+          <h3 class="catalog-item-name"><a href="#" title="На страницу мотеля Desert Quail Inn">Desert Quail Inn</a> </h3>         
           <div>Мотель</div>
-          <div>От 3000 ₽</div>
+          <div>От 3000 <span>&#8381;</span></div>
           <a class="learn-more" href="#" title="Подробнее о мотеле Desert Quail Inn">Подробнее</a>
           <a class="book-hotel" href="#" title="Забронировать мотель Desert Quail Inn">Забронировать</a>
         </div>
@@ -169,9 +169,9 @@
           <img src="img/villas.jpg" width="135" height="90" alt="Зеленая территория апартаментов Villas at Poco Diablo">
         </div>
         <div class="hotel-card">
-          <a href="#" title="На страницу апартаментов Villas at Poco Diablo"><h3 class="catalog-item-name">Villas at Poco Diablo</h3></a>          
+          <h3 class="catalog-item-name"><a href="#" title="На страницу апартаментов Villas at Poco Diablo">Villas at Poco Diablo</a></h3>          
           <div>Апартаменты</div>
-          <div>От 2000 ₽</div>
+          <div>От 2000 <span>&#8381;</span></div>
           <a class="learn-more" href="#" title="Подробнее об апартаментах Villas at Poco Diablo">Подробнее</a>
           <a class="book-hotel" href="#" title="Забронировать апартаменты Villas at Poco Diablo">Забронировать</a>
         </div>
@@ -198,7 +198,7 @@
         <li class="twitter">
           <a class="social-button link" href="#" title="Twitter">
             <span class="visually-hidden">Twitter</span>
-            <svg width="17" height="17" viewBox="0 0 17 17">
+            <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17">
               <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
             </svg>
             </a>
@@ -206,7 +206,7 @@
         <li>
           <a class="social-button link" href="#" title="Facebook">
             <span class="visually-hidden">Facebook</span>
-            <svg width="12" height="22" viewBox="0 0 12 22">
+            <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
           </a>
@@ -225,7 +225,7 @@
       <div>Website by</div>
       <a class="copyright-button link" href="https://htmlacademy.ru" title="Разработано HTML ACADEMY">
         <span class="visually-hidden">html.academy</span>
-        <svg width="115" height="33" viewBox="0 0 115 33">
+        <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33">
           <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black"/>
           <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="black"/>
           <path d="M26.6171 4.82696H21.8082V1.07349H19.7778V4.82696H17.8542V6.80022H19.7778V12.7843C19.7778 14.5002 20.7396 15.4439 22.4708 15.4439H26.6171V13.4492H22.8769C22.193 13.4492 21.8082 13.0632 21.8082 12.3983V6.80022H26.6171V4.82696Z" fill="black"/>
