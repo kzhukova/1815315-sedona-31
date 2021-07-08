@@ -59,12 +59,13 @@ img {
     font-weight: 700;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    margin: 0;
+    padding: 0;
 }
 
 .main-header-logo {
     position: absolute;
-    top: -15px;
-    left: 45.5%;
+    left: 532px;
 }
 
 .main-header-bar {
@@ -77,51 +78,52 @@ img {
     flex-wrap: wrap;    
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .site-navigation a {
     display: block;
     cursor: pointer;
-}
-
-.site-navigation li {
-    flex-basis: 200px;
-}
-
-.site-navigation li:first-child {
-    flex-grow: 0; 
-}
-
-.site-navigation li:last-child {
-    flex-grow: 0; 
-}
-
-.site-navigation li:nth-child(2) {
-    flex-grow: 2; 
-}
-
-.site-navigation li:nth-child(3) {
-    flex-grow: 2;    
+    padding-top: 14px;
+    padding-bottom: 16px;
 }
 
 .nav-about {
-    padding-left: 72px;
+    flex-basis: 200px;
 }
 
 .nav-gallery {
-    padding-left: 100px;
+    flex-basis: 400px;    
 }
 
 .nav-map {
-    padding-left: 205px;    
+    flex-basis: 400px;
 }
 
 .nav-hotel {
-    padding-left: 48px;
+    flex-basis: 200px;
 }
 
 .site-navigation a {
   color: var(--basic-black);
+}
+
+.nav-about a {
+    padding-left: 73px;
+}
+
+.nav-gallery a {
+    padding-left: 100px;
+}
+
+.nav-map a {
+    text-align: right;
+    padding-right: 99px;
+}
+
+.nav-hotel a {
+    text-align: right; 
+    padding-right: 72px;
 }
 
 .site-navigation a:hover {
@@ -146,7 +148,7 @@ img {
     margin-top: 0;
     background-image: url("../img/shape.svg"),
     url("../img/background.jpg");
-    height: 509px;
+    height: 510px;
     width: 1200px;
     background-position: bottom center, top center;
     background-repeat: no-repeat, no-repeat;
@@ -223,6 +225,7 @@ img {
 }
 
 .feature-item-real span{
+    display: block;
     margin-top: 25px;
 }
 .feature-item-real p{
@@ -255,6 +258,7 @@ img {
 }
 
 .feature-item-bridge span{
+    display: block;
     margin-top: 25px;
 }
 .feature-item-bridge p{
@@ -291,6 +295,7 @@ img {
 }
 
 .feature-item-close span {
+    display: block;
     margin-top: 25px;
 }
 
@@ -313,6 +318,7 @@ img {
 }
 
 .feature-item-road span {
+    display: block;
     margin-top: 25px;
 }
 
@@ -335,6 +341,7 @@ img {
 }
 
 .feature-item-uncrowded span {
+    display: block;
     margin-top: 25px;
 }
 
@@ -569,7 +576,6 @@ img {
 }
 
 .modal {
-    display: none;
     position: absolute;
     top: 247px;
     right: 0;
@@ -649,6 +655,7 @@ img {
     min-height: 38px;
     width: 38px;
     text-align: center;
+    z-index: 1;
 }
 
 .people-number-item {
@@ -682,8 +689,7 @@ img {
 
 .icon-date:focus {
     background-color: var(--basic-white);
-    border: 2px solid var(--badic-grey90);
-    outline: 0;
+    outline: 2px solid var(--badic-grey90);
     width: 342px;
 }
 
@@ -694,8 +700,7 @@ img {
 
 .people-number:focus {
     background-color: var(--basic-white);
-    border: 2px solid var(--badic-grey90);
-    outline: 0;
+    outline: 2px solid var(--badic-grey90);
 }
 
 input.icon-date::placeholder {
@@ -759,10 +764,11 @@ input.people-number::placeholder {
 .filters {
     background-image: url("../img/background-catalog.jpg");
     background-repeat: no-repeat;
-    min-height: 217px;
     width: 1200px;
+    min-height: 217px;
     color: var(--basic-white);
-    line-height: 21px;  
+    line-height: 21px; 
+    background-size: cover; 
 }
 
 .filter {
@@ -999,7 +1005,7 @@ input.people-number::placeholder {
     display: grid;
     grid-template-columns: 200px 150px 670px 180px;
     width: 1200px;
-    height: 86px;
+    min-height: 86px;
     align-items: center;
     border-bottom: 1px solid var(--badic-grey90);
 }

@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;subset=latin,cyrillic;display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     
   </head>
   <body class="page-body inner-page">
@@ -19,10 +19,10 @@
       </a>
       <div class="main-header-bar">
         <ul class="site-navigation">
-          <li><a class="link nav-about" href="#" title="Основная информация о городе">Информация</a></li>
-          <li><a class="link nav-gallery" href="#" title="Фотографии и видео города">Фото и видео</a></li>
-          <li><a class="link nav-map" href="#" title="Город на карте штата">Карта штата</a></li>
-          <li class="site-navigation-current"><a class="link nav-hotel">Гостиницы</a></li>
+          <li class="nav-about"><a class="link" href="#" title="Основная информация о городе">Информация</a></li>
+          <li class="nav-gallery"><a class="link" href="#" title="Фотографии и видео города">Фото и видео</a></li>
+          <li class="nav-map"><a class="link" href="#" title="Город на карте штата">Карта штата</a></li>
+          <li class="site-navigation-current nav-hotel"><a class="link">Гостиницы</a></li>
         </ul>
       </div>
     </nav>
@@ -32,7 +32,7 @@
   <h1 class="visually-hidden">Гостиницы</h1>
   <section class="filters">
     <h2 class="visually-hidden">Фильтры для поиска жилья</h2>
-    <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <div class="infrastructure">
       <fieldset class="filter-fieldset">
         <legend class="filters-legend">Инфраструктура:</legend>
@@ -214,7 +214,7 @@
         <li>
           <a class="social-button link" href="#" title="Youtube">
             <span class="visually-hidden">Youtube</span>
-            <svg width="20" height="16" viewBox="0 0 20 16">
+            <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
               </svg>            
           </a>
