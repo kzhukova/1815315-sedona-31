@@ -21,6 +21,7 @@
 .page {
     height: 100%;
 }
+
 .page-body {
     min-width: 1200px;
     font-family: "PT Sans", Arial, sans-serif;
@@ -29,8 +30,7 @@
     font-weight: 400;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-grey95);
-    
+    background-color: var(--basic-grey95);    
 }
 
 .main-container {
@@ -84,41 +84,21 @@ img {
 .site-navigation a {
     display: block;
     cursor: pointer;
-    padding-top: 14px;
-    padding-bottom: 16px;
+    margin-top: 14px;
+    margin-bottom: 16px; 
+    color: var(--basic-black);
 }
 
-.nav-about {
-    flex-basis: 200px;
-}
-
-.nav-gallery {
-    flex-basis: 400px;    
-}
-
-.nav-map {
-    flex-basis: 400px;
-}
-
-.nav-hotel {
-    flex-basis: 200px;
-}
-
-.site-navigation a {
-  color: var(--basic-black);
+.site-navigation li {
+    flex-basis: 300px;
 }
 
 .nav-about a {
     padding-left: 73px;
 }
 
-.nav-gallery a {
-    padding-left: 100px;
-}
-
 .nav-map a {
     text-align: right;
-    padding-right: 99px;
 }
 
 .nav-hotel a {
@@ -152,6 +132,7 @@ img {
     width: 1200px;
     background-position: bottom center, top center;
     background-repeat: no-repeat, no-repeat;
+    background-size: cover cover;
     
 }
 
@@ -445,13 +426,19 @@ img {
 .hotel-searh {
     display: inline-block;
     text-align: center;
+    width: 568px;
+    min-height: 86px;
     margin-left: 316px;
-    padding: 30px 140px;
-    vertical-align: middle;
+    margin-right: 316px;
     background-color: var(--basic-brown);
     font-size: 21px;
     font-weight: 700;
     color: var(--basic-white);
+}
+
+.hotel-searh p {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hotel-searh:hover {
@@ -469,6 +456,7 @@ img {
     height: 594px;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .map-picture iframe {
@@ -476,7 +464,6 @@ img {
 }
 
 .main-footer {
-    padding-bottom: 36px;
     background-color: var(--basic-white);
     opacity: 0.9;
     margin-top: -121px;
@@ -489,6 +476,7 @@ img {
 .main-footer .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    min-height: 120px;
 }
 
 .footer-contacts {
@@ -497,7 +485,7 @@ img {
     text-align: center;
     font-size: 21px;
     font-weight: 700;
-    margin-top: 23px;
+    padding-top: 23px;
 }
 
 .footer-phone {
@@ -524,7 +512,8 @@ img {
 
 .footer-copyright {
     display: flex;
-    width: 400px;
+    width: 327px;
+    text-align: center;
     font-size: 14px;
     line-height: 26px;
     margin: 0;
@@ -577,7 +566,7 @@ img {
 
 .modal {
     position: absolute;
-    top: 247px;
+    top: 248px;
     right: 0;
     bottom: auto;
     left: 0;
@@ -595,14 +584,13 @@ img {
     background-color: var(--basic-grey95);
     border: 0;
     width: 346px;
-    min-height: 38px;
-}
-
-.icon-date-one {
-    position: relative;
+    height: 38px;
+    padding-left: 12px;
 }
 
 .hotels-item {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -638,12 +626,16 @@ img {
     margin-bottom: 30px;
 }
 
-.hotels-item:first-child label {
-    padding: 0;
-    margin-right: 16px;
+.hotels-item label {
+    width: 112px;
 }
 
-.hotels-item:nth-child(2) label {
+.people-number-item p:first-child label {
+    padding: 0;
+    margin-right: 18px;
+}
+
+.people-number-item p:last-child label {
     padding: 0;
     margin-right: 12px;
 }
@@ -661,17 +653,16 @@ img {
 .people-number-item {
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 49px;
 }
 
-
-.people-number-item .hotels-item:first-child {
+.people-number-item p{
     display: flex;
     align-items: center;
-}
-
-.people-number-item .hotels-item:last-child{
-    display: flex;
-    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .adults-number {
@@ -705,11 +696,12 @@ img {
 
 input.icon-date::placeholder {
     color: var(--basic-black);
-    padding-left: 12px;
+    opacity: 1;
 }
 
 input.people-number::placeholder {
-    color: var(--basic-black);
+    color: var(--basic-black);    
+    opacity: 1;
 }
 
 .people-number-change {
@@ -736,7 +728,7 @@ input.people-number::placeholder {
 .search-button {
     display: inline-block;
     width: 458px;
-    min-height: 58px;
+    height: 58px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -745,7 +737,6 @@ input.people-number::placeholder {
     border: 0;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 19px;
 }
 
 .search-button:hover {
